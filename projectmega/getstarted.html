@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">   
+</head>
+<body>
+    <header>
+        <h1>Start Your Transformation</h1>
+    </header>
+    <div class="features-container">     
+        <div class="feature">
+            <i class="fas fa-chart-line fa-2x"></i>
+            <h2><a href="progress-tracking.html">Progress Tracking</a></h2>
+            <p>Log your achievements and see your growth.</p>
+        </div>        
+        <div class="feature">
+            <i class="fas fa-tasks fa-2x"></i>
+            <h2><a href="goal-setting.html">Goal Setting</a></h2>
+            <p>Set, track, and achieve your personal goals.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-user fa-2x"></i>
+            <h2><a href="personal-insights.html">Personal Insights</a></h2>
+            <p>Gain insights tailored to your journey.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-shield-alt fa-2x"></i>
+            <h2><a href="website-blocking.html">Website Blocking</a></h2>
+            <p>Block distracting websites to stay focused.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-list fa-2x"></i>
+            <h2><a href="daily-to-do-list.html">Daily To-Do List</a></h2>
+            <p>Keep track of daily tasks and get reminders.</p>
+        </div>
+    </div>
+    <div class="decision-assistant-section">
+        <h2>Decision Assistant</h2>
+        <form id="decisionForm">
+            <label for="dilemma">What's your dilemma?</label>
+            <textarea id="dilemma" name="dilemma" placeholder="E.g., Should I take a break and play video games?"></textarea>
+            <button type="submit">Get Advice</button>
+        </form>
+        <div id="adviceOutput"></div>
+    </div>
+    <div class="settings-section">
+        <h2>Set Your Preferences</h2>
+        <form id="settingsForm">
+            <label for="values">Your Values:</label>
+            <textarea id="values" name="values" placeholder="E.g., Discipline, health, education..."></textarea>
+            <label for="goals">Your Goals:</label>
+            <textarea id="goals" name="goals" placeholder="E.g., Exercise daily, focus on studies..."></textarea>
+            <label for="avoid">Activities to Avoid:</label>
+            <textarea id="avoid" name="avoid" placeholder="E.g., Playing video games excessively..."></textarea>
+            <button type="button" id="saveButton">Save</button>
+        </form>
+    </div>
+    <script src="decision.js"></script>    
+</body>
+</html>
